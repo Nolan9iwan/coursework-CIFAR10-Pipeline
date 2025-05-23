@@ -16,3 +16,7 @@ history = model.fit(
     validation_data=(x_test, y_test)
 )
 
+# Evaluate the model 
+test_loss, test_acc = model.evaluate(x_test, y_test)
+print("Test accuracy:", test_acc)
+print("Test loss:", test_loss)
